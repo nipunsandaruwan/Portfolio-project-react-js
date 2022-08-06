@@ -1,0 +1,27 @@
+.floating-div{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   border: 1px solid orange;
+   border-radius: 20px;
+   background: white;
+
+}
+
+.floating-div img{
+    width: 50px;
+    z-index: 100;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+}
+
+.txt span{
+    font-size: 18px;
+}
+
