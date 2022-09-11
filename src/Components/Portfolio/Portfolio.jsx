@@ -10,13 +10,21 @@ import Projectpic from "../../pic/project.jpg";
 import Left from "../../pic/left.png";
 import Right from "../../pic/right.png";
 import SlideProject from "../Slide Project/SlideProject";
-import project1 from "../../pic/project1.png";
+import project01 from "../../pic/project001.png";
+import project1 from "../../pic/project01.png";
 import project2 from "../../pic/project2.png";
 import project3 from "../../pic/project3.png";
 
 //First you must add swiper npm package to the project (npm add swiper)
 const Portfolio = () => {
   const projects = [
+    {
+      pname: "DJS Aircon Solutions",
+      id: 1,
+      description:
+        "A static website which was created for a Malaysian business called DJS Aircon Solutions. The website was built with the SEO TTECHNICAL STANDARDS. ",
+      pic: project01,
+    },
     {
       pname: "Portfolio Web Site",
       id: 1,
