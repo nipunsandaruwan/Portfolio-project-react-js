@@ -1,40 +1,40 @@
-
-@font-face{
+@font-face {
   font-family: Gumela;
-  src: url('./fonts/Gumela\ Regular.otf');
+  src: url("./fonts/Gumela\ Regular.otf");
 }
-*{
-  font-family: 'Gumela';
+* {
+  font-family: "Gumela";
   font-weight: normal;
   font-size: 20px;
-  
 }
-body{
+body {
   margin: 0;
   box-sizing: border-box;
 }
 
-.App{
+.App {
   padding: 0;
   overflow: hidden;
   color: rgb(41, 41, 41);
+  cursor: default;
 }
 
-.button{
+.button {
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   padding: 7px 18px;
-  background: linear-gradient(rgb(255, 238, 0) 30%,rgb(218, 141, 0) 100%);
-  box-shadow: 0 20px 24px 3px rgba(255, 166, 0, 0.767);
+  background: linear-gradient(rgb(255, 238, 0) 30%, rgb(218, 141, 0) 100%);
+  box-shadow: 0 0px 15px rgba(255, 166, 0, 0.767);
+  transition: 0.7s ease;
 }
 
-.button:hover{
+.button:hover {
   background: white;
   cursor: pointer;
   color: orange;
   border: 1px solid orange;
+  font-weight: 900;
+  font-size: 19px;
 }
-
-

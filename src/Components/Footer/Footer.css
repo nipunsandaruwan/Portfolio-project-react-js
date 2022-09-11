@@ -1,4 +1,4 @@
-.footer{
+/* .footer{
     width: 100%;
     display: flex;
     align-items: center;
@@ -12,11 +12,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* top: 0; */
+    
     width: 100%;
     gap: 2rem; 
     color: white;
-    /* font-size: 30px; */
+    
 }
 
 .f-icons{
@@ -28,4 +28,101 @@
 }
 
 
+ */
 
+.footer {
+  /* background-color: #010144; */
+  padding: 20px 20px 5px 20px;
+  min-width: 400px;
+  cursor: default;
+  background: url("../../pic/wave.png");
+  background-size: 100% 100%;
+  text-align: center;
+  background-position: center;
+  padding-top: 100px;
+}
+
+.footer > h2 {
+  color: whitesmoke;
+  margin-bottom: 20px;
+  font-size: 27px;
+  background-color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* min-width: 2000px; */
+}
+.footer-bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.footert-card {
+  color: whitesmoke;
+  font-size: 12px;
+}
+.display-none {
+  display: none;
+}
+
+.footert-card img {
+  width: 30px;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.copywright {
+  font-size: 8px;
+  color: whitesmoke;
+  margin-top: 15px;
+}
+.footerMiddle p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.address {
+  /* background-color: brown; */
+  margin: 0;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 576px) {
+  .footer-bottom {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .footert-card {
+    font-size: 14px;
+  }
+  .copywright {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer > h2 {
+    font-size: 34px;
+  }
+  .display-none {
+    display: block;
+  }
+  .marginLrft {
+    margin-left: -60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-bottom {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .marginLrft {
+    margin-left: -80px;
+  }
+  .paddingtop {
+    padding-top: 20px;
+  }
+}

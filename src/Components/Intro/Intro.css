@@ -1,223 +1,270 @@
-.intro{
-    display: flex;
-    height: 80vh;
-    margin-top: 30px;
-    padding-left: 40px;
+.intro {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(150vh - 8vh);
+
+  /* background-color: blue; */
+}
+.i-left {
+  width: 100%;
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: calc(100vh - 10vh);
+  padding-left: 40px;
+  /* background-color: aqua; */
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+}
+.i-name span:nth-child(1) {
+  font-size: 54px;
+  font-weight: bolder;
+}
+.i-name span:nth-child(2) {
+  font-size: 54px;
+  font-weight: bolder;
+  color: #fdd40f;
+  margin-bottom: 5px;
+}
+.i-name span:nth-child(3) {
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 5px;
+}
+.i-left .button {
+  height: 40px;
+  width: 120px;
+}
+.hire-me {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.social-media-icons {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.social-media-icons img {
+  height: 60px;
+  cursor: pointer;
+  /* margin-bottom: 10px; */
+  transition: 0.4s ease;
+}
+.social-media-icons img:hover {
+  transform: scale(1.1);
+}
+.i-right {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 130px;
+  min-width: 475px;
+  /* background-color: aqua; */
+}
+.center {
+  height: 100%;
+  width: 5px;
+  position: relative;
+  margin: auto;
+  /* background-color: aqua; */
+}
+/* blue */
+.bluebg {
+  position: absolute;
+  transform: scale(0.7);
+  bottom: -70px;
+  left: -280px;
+  z-index: 3;
+}
+/* yellow */
+.yellowbg {
+  position: absolute;
+  transform: scale(0.6);
+  bottom: -150px;
+  left: -390px;
+  z-index: 2;
+}
+/* man */
+.manbg {
+  position: relative;
+  transform: scale(1.1);
+  bottom: 0;
+  left: -130px;
+  z-index: 10;
 }
 
-.i-left{
-    flex: 1;
-    margin-right: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    
+.emoji {
+  position: absolute;
+  transform: scale(0.8);
+  top: -130px;
+  left: -300px;
+  z-index: 200;
+}
+.float-item {
+  position: absolute;
+  width: 170px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 30;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 15px;
 }
 
-.i-name{
-    display: flex;
-    flex-direction: column;
+/* web developer */
+.fitem1 {
+  top: -90px;
+  left: 40px;
 }
-.i-name span:nth-child(1){
+
+/* React js */
+.fitem2 {
+  bottom: 10px;
+  left: -200px;
+}
+
+.image {
+  width: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .i-name span:nth-child(1) {
     font-size: 60px;
-    font-weight: bold;
-}
-.i-name span:nth-child(2){
+  }
+  .i-name span:nth-child(2) {
     font-size: 60px;
-    font-weight: bold;
-    color: orange;
-}
-.i-name span:nth-child(3){
+    margin-bottom: 10px;
+  }
+  .i-name span:nth-child(3) {
     font-size: 18px;
     font-weight: 500;
-    margin-top: 20px;
-    color: gray;
-    margin-bottom: 20px;
-}
-.i-left .button{
-    height: 40px;
-    width: 100px;
-}
-.hire-me{
-     margin-top: 10px;
-     margin-left: 40px;
-}
-.social-media-icons{
-    width: 150px;
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
+    margin-bottom: 10px;
+  }
+  .i-left .button {
+    height: 42px;
+    width: 120px;
+  }
+  .hire-me {
+    margin-top: 15px;
 
+    margin-bottom: 25px;
+  }
+  .social-media-icons {
+    width: 310px;
+
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+  .social-media-icons img {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .intro {
     display: flex;
-    justify-content: space-between;
-}
-.social-media-icons img{
-    height: 40px;
-    cursor: pointer;
-}
-
-
-.i-right{
-    flex: 1;
-    position: relative;
-    z-index: 1;
-}
-
-.i-right img:nth-child(1){
-    position: absolute;
-    transform: scale(.8);
-    bottom: -100px;
-    right: -150px;
-    z-index: 3;
-}
-.i-right img:nth-child(2){
-    position: absolute;
-    transform: scale(.7);
-    left: -150px;
-    z-index: 2;
-}
-.i-right img:nth-child(3){
-    position: absolute;
+    flex-direction: row;
+    min-height: calc(100vh - 8vh);
+  }
+  /* man */
+  .manbg {
     transform: scale(1.3);
-    bottom: 11px;
-    right: 180px;
-    z-index: 4;
-}
-.i-right img:nth-child(4){
-    position: absolute;
-    transform: scale(1);
-    top: -20px;
-    left: -200px;
-    z-index: 5;
-}
-.float-item{
-    position: absolute;
-    width: 200px;
-    height: 80px;
-    z-index: 10;
-    
-}
-
-.fitem1{
-    right: 60px;
-    top: 170px;
-    /* position: relative; */
-}
-
-.fitem2{
-    bottom: 10px;
-    right: 400px;
-    /* position: relative; */
+    bottom: -20px;
+  }
+  /* blue */
+  .bluebg {
+    transform: scale(0.8);
+    bottom: -40px;
+    left: -250px;
+  }
+  /* yellow */
+  .yellowbg {
+    transform: scale(0.6);
+    bottom: -140px;
+    left: -400px;
+  }
+  /* React js */
+  .fitem2 {
+    bottom: 30px;
+    left: -230px;
+  }
+  .emoji {
+    transform: scale(0.8);
+    top: -130px;
+    left: -400px;
+  }
 }
 
-
-@media screen and (max-width:540px) {
-    .intro{
-        margin-top: -30px;
-        flex-direction: column;
-        height: 190vh;
-    }
-    .i-right{
-        transform: scale(.8);
-        left: 120px;
-        top: -10px;
-    }
-    .i-right img:nth-child(1){
-        right: -50px;
-    }
-    .i-right img:nth-child(2){
-        left: -400px;
-        top: 50px;
-    }
-    .i-right img:nth-child(3){
-        bottom: 20px;
-        right: 210px;
-    }
-    .i-right img:nth-child(4){
-        top: -30px;
-        left: -300px !important;
-    }
-    .float-item{
-        width: 140px;
-        height: 60px;   
-    }
-    .fitem1{
-        right: 25px !important; 
-        top: 120vh !important;
-    }
-    .fitem2{
-        bottom: -475px !important;
-        right: 220px !important;
-    }
+@media screen and (min-width: 960px) {
+  .center {
+    padding-right: 70px;
+  }
 }
+@media screen and (min-width: 1260px) {
+  .center {
+    padding-right: 140px;
+  }
+  .i-name span:nth-child(1) {
+    font-size: 64px;
+    letter-spacing: 1px;
+  }
+  .i-name span:nth-child(2) {
+    font-size: 64px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  .i-name span:nth-child(3) {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+  .i-left .button {
+    height: 44px;
+    width: 140px;
+  }
+  .hire-me {
+    margin-top: 15px;
 
-@media screen  and (min-width:541px) and (max-width:690px) {
-    .intro{
-        margin-top: -30px;
-        flex-direction: column;
-        height: 190vh;
-    }
-    .i-right{
-        transform: scale(.8);
-        left: 120px;
-        top: -10px;
-    }
-     .i-right img:nth-child(1){
-        right: 0px;
-    }
-    .i-right img:nth-child(2){
-        left: -300px;
-        top: 100px;
-    }
-    .i-right img:nth-child(3){
-        bottom: 20px;
-        right: 280px;
-    }
-    
-    .float-item{
-        top: 120vh;
-        width: 140px;
-        height: 60px;   
-    }
-    
-    .fitem2{
-        top: 172vh;
-        right: 320px !important;
-    }
+    margin-bottom: 25px;
+  }
+  .social-media-icons {
+    width: 310px;
+
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+
+  .fitem1 {
+    transform: scale(1.2);
+    top: -90px;
+    left: 80px;
+  }
+  .fitem2 {
+    transform: scale(1.2);
+    bottom: 50x !important;
+    left: -250px;
+  }
+  .emoji {
+    transform: scale(01);
+    top: -110px;
+    left: -550px;
+  }
 }
-
-@media screen  and (min-width:691px) and (max-width:882px) {
-    .intro{
-        margin-top: -30px;
-        flex-direction: column;
-        height: 190vh;
-    }
-    .i-right{
-        transform: scale(.8);
-        left: 120px;
-        top: -10px;
-    }
-     .i-right img:nth-child(1){
-        right: 60px;
-    }
-    .i-right img:nth-child(2){
-        left: -250px;
-        top: 100px;
-    }
-    .i-right img:nth-child(3){
-        bottom: 50px;
-        right: 380px;
-    }
-    
-    .float-item{
-        top: 120vh;
-        width: 140px;
-        height: 60px;   
-    }
-    
-    .fitem2{
-        top: 174vh;
-        right: 420px !important;
-    }
+@media screen and (min-width: 1460px) {
+  .center {
+    padding-right: 200px;
+  }
 }
