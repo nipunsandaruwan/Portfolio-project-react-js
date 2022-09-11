@@ -78,28 +78,55 @@
   /* background-color: aqua; */
 }
 /* blue */
-.bluebg {
+/* .bluebg {
   position: absolute;
   transform: scale(0.7);
   bottom: -70px;
   left: -280px;
   z-index: 3;
-}
+} */
 /* yellow */
-.yellowbg {
+/* .yellowbg {
   position: absolute;
   transform: scale(0.6);
   bottom: -150px;
   left: -390px;
   z-index: 2;
-}
+} */
 /* man */
-.manbg {
+/* .manbg {
   position: relative;
   transform: scale(1.1);
   bottom: 0;
   left: -130px;
   z-index: 10;
+} */
+
+/* man */
+.manbg {
+  position: relative;
+  transform: scale(0.9);
+  bottom: 0;
+  left: -300px;
+  z-index: 10;
+}
+
+/* blue */
+.bluebg {
+  position: absolute;
+  transform: scale(0.8);
+  bottom: -40px;
+  left: -280px;
+  z-index: 3;
+}
+
+/* yellow */
+.yellowbg {
+  position: absolute;
+  transform: scale(0.7) rotate(20deg);
+  bottom: -100px;
+  left: -390px;
+  z-index: 2;
 }
 
 .emoji {
@@ -171,6 +198,24 @@
     width: 70px;
     height: 70px;
   }
+  .emoji {
+    position: absolute;
+    transform: scale(0.8);
+    top: -130px;
+    left: -340px;
+    z-index: 200;
+  }
+  /* web developer */
+  .fitem1 {
+    top: -90px;
+    left: 100px;
+  }
+
+  /* React js */
+  .fitem2 {
+    bottom: 10px;
+    left: -230px;
+  }
 }
 @media screen and (min-width: 860px) {
   .intro {
@@ -178,32 +223,63 @@
     flex-direction: row;
     min-height: calc(100vh - 8vh);
   }
+  .i-right {
+    height: 70vh;
+  }
   /* man */
-  .manbg {
+  /* .manbg {
     transform: scale(1.3);
     bottom: -20px;
+  } */
+  /* blue */
+  /* .bluebg {
+    transform: scale(0.8);
+    bottom: -40px;
+    left: -250px;
+  } */
+  /* yellow */
+  /* .yellowbg {
+    transform: scale(0.6);
+    bottom: -140px;
+    left: -400px;
+  } */
+  /* React js */
+  /* .fitem2 {
+    bottom: 30px;
+    left: -230px;
+  } */
+  .emoji {
+    transform: scale(0.8);
+    top: -130px;
+    left: -420px;
+  }
+  /* man */
+  .manbg {
+    transform: scale(0.7);
+    bottom: 120px;
+    left: -340px;
   }
   /* blue */
   .bluebg {
     transform: scale(0.8);
-    bottom: -40px;
-    left: -250px;
+    bottom: -80px;
+    left: -280px;
   }
   /* yellow */
   .yellowbg {
-    transform: scale(0.6);
-    bottom: -140px;
-    left: -400px;
+    transform: scale(0.7) rotate(20deg);
+    bottom: -150px;
+    left: -330px;
+  }
+  /* web developer */
+  .fitem1 {
+    top: -90px;
+    left: 0px;
   }
   /* React js */
   .fitem2 {
-    bottom: 30px;
-    left: -230px;
-  }
-  .emoji {
-    transform: scale(0.8);
-    top: -130px;
-    left: -400px;
+    bottom: 10px;
+    left: -220px;
   }
 }
 
@@ -254,8 +330,8 @@
   }
   .fitem2 {
     transform: scale(1.2);
-    bottom: 50x !important;
-    left: -250px;
+    bottom: 20px;
+    left: -350px;
   }
   .emoji {
     transform: scale(01);

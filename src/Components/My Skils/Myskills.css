@@ -1,5 +1,5 @@
 .skills {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-bottom: 50px;
   display: flex;
   align-items: center;
@@ -67,7 +67,7 @@
   bottom: -300px;
 }
 .item4 {
-  left: -100px;
+  right: 0px;
   bottom: -700px;
 }
 .item5 {
@@ -78,10 +78,11 @@
 @media screen and (max-width: 820px) {
   .skills {
     width: 100%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     flex-direction: column;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 40px;
+    padding-top: 50px;
   }
   .skills-right {
     margin-top: 50px;
@@ -91,10 +92,16 @@
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 860px) {
+  .skills {
+    margin-top: 20px;
+    padding-top: 50px;
+  }
+}
 
 @media screen and (min-width: 820px) and (max-width: 1130px) {
   .skills {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     margin-bottom: 930px;
   }
   .item1 {
@@ -110,7 +117,7 @@
     bottom: -600px;
   }
   .item4 {
-    left: 80px;
+    right: 70px;
     bottom: -1020px;
   }
   .item5 {
@@ -136,11 +143,17 @@
     bottom: -460px;
   }
   .item4 {
-    left: -80px;
+    right: 420px;
     bottom: -870px;
   }
   .item5 {
     left: -430px;
     bottom: -600px;
+  }
+}
+@media screen and (min-width: 1283px) {
+  .item4 {
+    right: 520px;
+    bottom: -740px;
   }
 }

@@ -8,7 +8,8 @@ import Insta from "../../pic/instagram.png";
 import Git from "../../pic/github.png";
 import Vector1 from "../../pic/Vector1.png";
 import Vector2 from "../../pic/Vector2.png";
-import Boy from "../../pic/boy.png";
+// import Boy from "../../pic/boy.png";
+import Boy from "../../pic/1bg.png";
 import Thumbup from "../../pic/thumbup.png";
 import Crown from "../../pic/crown.png";
 import Glassesimoji from "../../pic/glassesimoji.png";
@@ -31,8 +32,7 @@ const Intro = () => {
           <span>Hi! I'm</span>
           <span>Nipun Sandaruwan</span>
           <span style={darkMode ? { color: "white" } : null}>
-            For now , I'm a frontend developer... <br />I want to become a
-            fullstack developer..!
+            I'm a fullstack developer....
           </span>
         </div>
         <div className="hire-me">
@@ -49,6 +49,7 @@ const Intro = () => {
 
       <div className="i-right">
         <div className="center">
+          {/* <img className="manbg" src={Boy} alt="" /> */}
           <img className="manbg" src={Boy} alt="" />
           <img className="bluebg" src={Vector1} alt="" />
           <img className="yellowbg" src={Vector2} alt="" />
